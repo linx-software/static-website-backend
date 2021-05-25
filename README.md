@@ -36,7 +36,7 @@ This sample uses an ODBC to connect to the MySQL Database
 Database
 
 1. Run SQL scripts
-2, Setup ODBC
+2. Setup ODBC
 
 Linx
 
