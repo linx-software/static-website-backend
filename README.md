@@ -46,9 +46,11 @@ Linx
 Website
 
 1. Copy website files to a folder of your choice
-2a. Right-click on the index.html file and open in a browser of your choice
+2. Right-click on the index.html file and open in a browser of your choice
+
 OR
-2b. Browse to the website using a local webserver
+
+2. Browse to the website using a local webserver
 
 ---
 
