@@ -61,6 +61,7 @@ Description: The example website includes user registration, login and updating 
 Usage:
 
 1. Debug WebSiteBackendRESTHost Service in the Linx Designer
-2. Register a user
-3. Login to site
-4. Change user info
+2. Open index.html in browser
+3. Register a user
+4. Login to site
+5. Change user info
