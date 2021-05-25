@@ -42,7 +42,6 @@ Linx
 
 1. Open Solution
 2. Change ConnectionString Setting
-3. Debug WebSiteBackendRESTHost Service
 
 Website
 
@@ -55,13 +54,11 @@ OR
 
 ## Using the sample
 
----
-
-Using the website
 Description: The example website includes user registration, login and updating user info
 
 Usage:
 
-1. Register a user
-2. Login to site
-3. Change user info
+1. Debug WebSiteBackendRESTHost Service in the Linx Designer
+2. Register a user
+3. Login to site
+4. Change user info
