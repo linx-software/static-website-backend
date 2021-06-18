@@ -2,6 +2,12 @@
 var linxapi = "http://localhost:8062";
 var searchString = new URLSearchParams(location.search);
 var token = searchString.getAll("usertoken").toString();
+if (token != "") {
+    sessionStorage.setItem("token", token);
+    removeFromQuerystring("usertoken");
+} else if (sessionStorage.getItem("token")) {
+    token = sessionStorage.getItem("token");
+}
 
 /*Init*/
 const msg = searchString.getAll("msg").toString();
@@ -23,6 +29,11 @@ loginButton.addEventListener("click", function () {
 const updateUserButton = document.getElementById("updateUserButton");
 updateUserButton.addEventListener("click", function () {
     updateUser();
+});
+
+const logoutLink = document.getElementById("logoutLink");
+logoutLink.addEventListener("click", function () {
+    logoutUser();
 });
 
 pageInit();
@@ -95,7 +106,6 @@ function loginUser() {
             .then((data) => {
                 if (data.Success) {
                     token = data.Token;
-                    addToQuerystring('usertoken',token);
                     pageInit();
                 } else {
                     showMessage(data.Message);
@@ -219,7 +229,11 @@ function removeErrorMsg() {
 }
 function showAPIError(msg) {
     console.log(msg);
-    showMessage(msg);
+    if (msg == "TypeError: Failed to fetch") {
+        showMessage("The API gateway could not be reached");
+    } else {
+        showMessage(msg);
+    }
 }
 function showPassword(id) {
     const el = document.getElementById(id);
@@ -228,6 +242,10 @@ function showPassword(id) {
     } else {
         el.type = "password";
     }
+}
+function logoutUser(){
+    sessionStorage.removeItem("token");
+    window.location.href = window.location.href + "?msg=You are logged out";
 }
 function addToQuerystring(key,val){
     const url = new URL(window.location);
