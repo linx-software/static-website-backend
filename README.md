@@ -1,49 +1,27 @@
 # Linx REST Service as Static Website Backend
 
-## Overview
+## Description
 
 This sample shows how a Linx REST Service can be used as the backend to a static website. 
 It allows for user registrations, logins and user info updates. 
 The website uses Javascript to communicate with the REST service and does not require any server-side scripting. 
 
-The provided sample includes:
-
-- Linx Solution
-- Website (HTML, JS and CSS)
-- MySQL Database
-
----
-
-## Dependencies
+## Installation
 
 ### Pre-requisites
-
-- Linx Designer
 - MySQL Database Server
 
-### Linx Designer
-
-This solution was developed in the Linx Designer `v5.21.0.0`
-
 ### Database
-
-This sample uses an ODBC to connect to the MySQL Database
-
----
-
-## Setting up the sample
-
-Database
 
 1. Run SQL scripts
 2. Setup ODBC
 
-Linx
+### Linx
 
 1. Open Solution
 2. Change ConnectionString Setting
 
-Website
+### Website
 
 1. Copy website files to a folder of your choice
 2. Right-click on the index.html file and open in a browser of your choice
@@ -52,9 +30,9 @@ OR
 
 2. Browse to the website using a local webserver
 
----
 
-## Using the sample
+
+## Usage
 
 Description: The example website includes user registration, login and updating user info
 
@@ -65,3 +43,5 @@ Usage:
 3. Register a user
 4. Login to site
 5. Change user info
+
+
