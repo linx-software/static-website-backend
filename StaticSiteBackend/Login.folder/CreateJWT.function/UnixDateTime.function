@@ -1,0 +1,16 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "($.System.CurrentDateTime.ToUniversalTime() - \"1970-01-01\".ToDateTime(\"yyyy-MM-dd\")).TotalSeconds",
+        "CompiledExpression": "=({0}.ToUniversalTime()-System.DateTime.ParseExact(\"1970-01-01\",\"yyyy-MM-dd\",null)).TotalSeconds",
+        "Type": "Compiled:Double"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:Int64"
+}

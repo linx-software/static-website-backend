@@ -1,0 +1,80 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:zETX",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Message\":\"User logged in\", \"Success\":true, \"Token\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"Email\":{\"LinxExpression\":\"[PARSED]\"},\"FirstName\":{\"LinxExpression\":\"[PARSED]\"},\"LastName\":{\"LinxExpression\":\"[PARSED]\"},\"UserID\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Token"
+            ],
+            "expression": {
+              "Expression": "CreateJWT",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "Email"
+            ],
+            "expression": {
+              "Expression": "FindUser.email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "FirstName"
+            ],
+            "expression": {
+              "Expression": "FindUser.firstname",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "LastName"
+            ],
+            "expression": {
+              "Expression": "FindUser.lastname",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "UserID"
+            ],
+            "expression": {
+              "Expression": "FindUser.id",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:zETX",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:zETX"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

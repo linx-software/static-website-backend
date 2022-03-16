@@ -1,0 +1,70 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:7v1n",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Message\":\"User added\", \"Success\":true, \"User\":{\"Email\":{\"LinxExpression\":\"[PARSED]\"}, \"FirstName\":{\"LinxExpression\":\"[PARSED]\"}, \"LastName\":{\"LinxExpression\":\"[PARSED]\"}, \"UserID\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "User",
+              "Email"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.User.Email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "FirstName"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.User.FirstName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "LastName"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.User.LastName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "User",
+              "UserID"
+            ],
+            "expression": {
+              "Expression": "GetUserID.id",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:7v1n",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:7v1n"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

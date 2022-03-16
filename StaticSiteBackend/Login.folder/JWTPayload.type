@@ -1,0 +1,46 @@
+{
+  "Id": "eA7Z",
+  "Name": "JWTPayload",
+  "Properties": [
+    {
+      "Id": "ulrx",
+      "Name": "aud",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "c6xG",
+      "Name": "exp",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "alWn",
+      "Name": "iat",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "vff5",
+      "Name": "iss",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "jCSI",
+      "Name": "jti",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "MwQE",
+      "Name": "nbf",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "re8i",
+      "Name": "sub",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "rCmr",
+      "Name": "unique_name",
+      "Type": "Compiled:String"
+    }
+  ]
+}

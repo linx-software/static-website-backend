@@ -1,0 +1,26 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"UPDATE users SET firstname = '\" + $.Parameters.User.FirstName + \"',lastname = '\" + $.Parameters.User.LastName + \"' WHERE email = '\" + $.Parameters.User.Email + \"'\"",
+        "CompiledExpression": "=\"UPDATE users SET firstname = '\"+{2}+\"',lastname = '\"+{1}+\"' WHERE email = '\"+{0}+\"'\"",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "UpdateSQL",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

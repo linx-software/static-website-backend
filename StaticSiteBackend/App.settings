@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "QOdc",
+    "Name": "APIBaseUrl",
+    "Type": "Compiled:String",
+    "Value": "http://localhost:8062"
+  },
+  {
+    "Id": "sPZJ",
+    "Name": "BearerSecret",
+    "Type": "Compiled:String",
+    "Secret": true
+  },
+  {
+    "Id": "PVQA",
+    "Name": "ConnectionString",
+    "Type": "Compiled:String",
+    "Secret": true
+  },
+  {
+    "Id": "uhAT",
+    "Name": "JWTTokenExpirySeconds",
+    "Type": "Compiled:Int64",
+    "Value": "1200"
+  },
+  {
+    "Id": "mrm1",
+    "Name": "ShowServerErrors",
+    "Type": "Compiled:Boolean",
+    "Value": "True"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:yuPP",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"Message\":\"User not found\", \"Success\":false}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:yuPP",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:yuPP"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

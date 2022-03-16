@@ -1,0 +1,16 @@
+{
+  "Id": "XCSr",
+  "Name": "Login",
+  "Properties": [
+    {
+      "Id": "i71F",
+      "Name": "Email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "vSAf",
+      "Name": "Password",
+      "Type": "Compiled:String"
+    }
+  ]
+}

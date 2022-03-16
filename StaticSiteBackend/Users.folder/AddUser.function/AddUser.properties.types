@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "FzrS",
+      "Properties": [
+        {
+          "Id": "DSmE",
+          "Name": "User",
+          "Type": "Custom:dc8Z",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "7v1n",
+      "Properties": [
+        {
+          "Id": "RmlA",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "2A9i",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "YVsh",
+          "Name": "User",
+          "Type": "Custom:dc8Z",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]
