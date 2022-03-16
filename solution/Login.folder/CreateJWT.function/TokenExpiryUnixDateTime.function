@@ -1,0 +1,16 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "UnixDateTime + $.Settings.JWTTokenExpirySeconds",
+        "CompiledExpression": "={1}+{0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:Int64"
+}

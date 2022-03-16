@@ -10,9 +10,7 @@ body {
 }
 
 body,
-input,
-select,
-textarea {
+input {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: #333333;
@@ -47,6 +45,10 @@ table td {
   text-decoration: underline;
 }
 
+input:not([type="checkbox"]) {
+  width: 300px;
+}
+
 input[readonly] {
   background-color: transparent;
   border: none;
@@ -70,9 +72,9 @@ input[readonly] {
 .formField {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 160px max-content;
-      grid-template-columns: 160px -webkit-max-content;
-      grid-template-columns: 160px max-content;
+  -ms-grid-columns: 100px max-content;
+      grid-template-columns: 100px -webkit-max-content;
+      grid-template-columns: 100px max-content;
   padding: 4px 0;
 }
 

@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:zETX",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"Message\":\"Login failed\", \"Success\":false}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:zETX",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:zETX"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

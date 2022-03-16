@@ -1,0 +1,70 @@
+{
+  "Properties": [
+    {
+      "Id": "Target",
+      "Type": "Generated:XzJY",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:XzJY"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source",
+      "Type": "Generated:XzJY",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"Token\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "ResponseBody",
+              "Message"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Success"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Success",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Token"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Token",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "User"
+            ],
+            "expression": {
+              "Expression": "LoginUser.User",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:dc8Z"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

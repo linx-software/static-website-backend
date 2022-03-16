@@ -1,0 +1,476 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "diIv",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "XzJY",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Generated:erQN",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "erQN",
+      "Properties": [
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Token",
+          "Name": "Token",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "User",
+          "Name": "User",
+          "Type": "Generated:qdaE",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "qdaE",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "1IX4",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Generated:NXwP",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "NXwP",
+      "Properties": [
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Token",
+          "Name": "Token",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "User",
+          "Name": "User",
+          "Type": "Generated:Jayd",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "Jayd",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "9kQm",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "DTwX",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Generated:jeyZ",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "jeyZ",
+      "Properties": [
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Token",
+          "Name": "Token",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "User",
+          "Name": "User",
+          "Type": "Generated:fgu7",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "fgu7",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "SQwg",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "HnYx",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Generated:Va5X",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "Va5X",
+      "Properties": [
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Token",
+          "Name": "Token",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "User",
+          "Name": "User",
+          "Type": "Generated:wgQH",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "wgQH",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

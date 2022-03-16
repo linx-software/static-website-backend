@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "jO9z",
+      "Properties": [
+        {
+          "Id": "id",
+          "Name": "id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "firstname",
+          "Name": "firstname",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "lastname",
+          "Name": "lastname",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "email",
+          "Name": "email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "password",
+          "Name": "password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "adddatetime",
+          "Name": "adddatetime",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:7v1n",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"Message\":\"User exists\", \"Success\":false}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:7v1n",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:7v1n"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

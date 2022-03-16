@@ -1,0 +1,11 @@
+{
+  "Id": "nLKJ",
+  "Name": "JWTToken",
+  "Properties": [
+    {
+      "Id": "Pddg",
+      "Name": "Token",
+      "Type": "Compiled:String"
+    }
+  ]
+}

@@ -1,13 +1,7 @@
 /*Vars*/
 var linxapi = "http://localhost:8062";
 var searchString = new URLSearchParams(location.search);
-var token = searchString.getAll("usertoken").toString();
-if (token != "") {
-    sessionStorage.setItem("token", token);
-    removeFromQuerystring("usertoken");
-} else if (sessionStorage.getItem("token")) {
-    token = sessionStorage.getItem("token");
-}
+sessionStorage.removeItem("token");
 
 /*Init*/
 const msg = searchString.getAll("msg").toString();
@@ -36,16 +30,22 @@ logoutLink.addEventListener("click", function () {
     logoutUser();
 });
 
-pageInit();
+pageInit("");
 
 /*Page*/
-function pageInit() {
+function pageInit(tk) {
+    if (tk != "") {
+        sessionStorage.setItem("token", tk);
+    } else if (sessionStorage.getItem("token")) {
+        tk = sessionStorage.getItem("token");
+    }
+
     document.getElementById("userUpdateContainer").classList.remove("showBlock");
     var arrEl = document.getElementsByClassName("contentContainer");
     for (i = 0; i < arrEl.length; i++) {
         arrEl[i].classList.remove("showBlock");
     }
-    if (token != "") {
+    if (tk != "") {
         getUser();
         showMessage("You are logged in");
     } else {
@@ -65,7 +65,6 @@ function showUpdateForm(userData) {
     document.getElementById("userFirstName").value = userData.FirstName;
     document.getElementById("userLastName").value = userData.LastName;
     document.getElementById("userEmail").value = userData.Email;
-    document.getElementById("userPassword").value = userData.Password;
     document.getElementById("userUpdateContainer").classList.add("showBlock");
 }
 /*API CRUD*/
@@ -78,9 +77,8 @@ function registerUser() {
         showErrorMsg("registerContainer", "All fields are required");
     } else {
         removeErrorMsg();
-        const postJson = { User: { FirstName: registerFirstName, LastName: registerLastName, Email: registerEmail, Password: registerPassword } };
+        const postJson = { FirstName: registerFirstName, LastName: registerLastName, Email: registerEmail, Password: registerPassword };
         postData("/register", postJson)
-            .then(status)
             .then(json)
             .then((data) => {
                 showMessage(data.Message);
@@ -93,20 +91,18 @@ function registerUser() {
 function loginUser() {
     const loginEmail = document.getElementById("loginEmail").value;
     const loginPassword = document.getElementById("loginPassword").value;
-    const postJson = { Email: loginEmail, Password: loginPassword };
     if (loginEmail == "") {
         showErrorMsg("loginContainer", "Email required");
     } else if (loginPassword == "") {
         showErrorMsg("loginContainer", "Password required");
     } else {
         removeErrorMsg();
+        const postJson = { Email: loginEmail, Password: loginPassword };
         postData("/login", postJson)
-            .then(status)
             .then(json)
             .then((data) => {
                 if (data.Success) {
-                    token = data.Token;
-                    pageInit();
+                    pageInit(data.Token);
                 } else {
                     showMessage(data.Message);
                 }
@@ -118,10 +114,13 @@ function loginUser() {
 }
 function getUser() {
     getData("/getuser")
-        .then(status)
         .then(json)
         .then((data) => {
-            showUpdateForm(data.User);
+            if (data.Success) {
+                showUpdateForm(data.User);
+            } else {
+                showMessage(data.Message);
+            }
         })
         .catch((error) => {
             showAPIError(error);
@@ -136,9 +135,8 @@ function updateUser() {
         showErrorMsg("userUpdateContainer", "FirstName and LastName are required");
     } else {
         removeErrorMsg();
-        const postJson = { User: { FirstName: userFirstName, LastName: userLastName, Password: userPassword } };
+        const postJson = { FirstName: userFirstName, LastName: userLastName, Password: userPassword };
         postData("/updateuser", postJson)
-            .then(status)
             .then(json)
             .then((data) => {
                 showMessage(data.Message);
@@ -161,7 +159,7 @@ async function postData(url = "", data = {}) {
         credentials: "same-origin",
         headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + token,
+            Authorization: "Bearer " + sessionStorage.getItem("token"),
         },
         redirect: "follow",
         referrerPolicy: "no-referrer",
@@ -177,7 +175,7 @@ async function getData(url = "") {
         credentials: "same-origin",
         headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + token,
+            Authorization: "Bearer " + sessionStorage.getItem("token"),
         },
         redirect: "follow",
         referrerPolicy: "no-referrer",
@@ -228,7 +226,6 @@ function removeErrorMsg() {
     }
 }
 function showAPIError(msg) {
-    console.log(msg);
     if (msg == "TypeError: Failed to fetch") {
         showMessage("The API gateway could not be reached");
     } else {
@@ -243,17 +240,17 @@ function showPassword(id) {
         el.type = "password";
     }
 }
-function logoutUser(){
+function logoutUser() {
     sessionStorage.removeItem("token");
     window.location.href = window.location.href + "?msg=You are logged out";
 }
-function addToQuerystring(key,val){
+function addToQuerystring(key, val) {
     const url = new URL(window.location);
-    url.searchParams.set(key,val);
-    window.history.pushState({}, '', url);
+    url.searchParams.set(key, val);
+    window.history.pushState({}, "", url);
 }
-function removeFromQuerystring(key){
+function removeFromQuerystring(key) {
     const url = new URL(window.location);
     url.searchParams.delete(key);
-    window.history.pushState({}, '', url);
+    window.history.pushState({}, "", url);
 }

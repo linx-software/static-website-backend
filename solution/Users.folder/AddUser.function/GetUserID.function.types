@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "5H69",
+      "Properties": [
+        {
+          "Id": "id",
+          "Name": "id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "Id": "DIKo",
+  "Name": "APIResponse",
+  "Properties": [
+    {
+      "Id": "Kgrp",
+      "Name": "Message",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "YCZI",
+      "Name": "Success",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "Q2ZM",
+      "Name": "Token",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "KJEL",
+      "Name": "User",
+      "Type": "Custom:dc8Z"
+    }
+  ]
+}
