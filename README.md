@@ -1,3 +1,4 @@
+
 # Linx REST Service as Static Website Backend
 
 ## Description
@@ -20,8 +21,8 @@ The website uses Javascript to communicate with the REST service and does not re
 
 1. Open Solution
 2. Open Settings
-   a. Add a connection string to the database in the ConnectionString setting
-   b. Add a random string in the BearerSecret setting
+	a. Add a connection string to the database in the ConnectionString setting
+	b. Add a random string in the BearerSecret setting
 
 ### Website
 
@@ -43,5 +44,3 @@ Usage:
 3. Register a user
 4. Login to site
 5. Change user info
-
-
