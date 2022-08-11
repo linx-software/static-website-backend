@@ -10,12 +10,23 @@
   ],
   "Properties": [
     {
+      "Id": "Conditions",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.IfElse.Condition, Twenty57.Linx.Plugins.Standard, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": [
+        {
+          "ExecutionPathId": "8mXD",
+          "Name": "True"
+        }
+      ]
+    },
+    {
       "Id": "Expression_0",
       "Type": "Compiled:Boolean",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "FindUser.id > 0",
-        "CompiledExpression": "={0}>0",
+        "Expression": "FindUser != $.System.Null",
+        "CompiledExpression": "={1}!={0}",
         "Type": "Compiled:Boolean"
       },
       "ValueType": "Linx.CSharpExpression"
@@ -25,17 +36,6 @@
       "Type": "Compiled:Boolean",
       "ValueUsage": "DesignTime",
       "Value": false
-    },
-    {
-      "Id": "Conditions",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.IfElse.Condition, Twenty57.Linx.Plugins.Standard, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "DesignTime",
-      "Value": [
-        {
-          "ExecutionPathId": "8mXD",
-          "Name": "True"
-        }
-      ]
     },
     {
       "Id": "Stop when true",

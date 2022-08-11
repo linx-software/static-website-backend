@@ -5,12 +5,13 @@ html {
 }
 
 body {
-  padding: 20px;
+  padding: 30px;
   margin: 0;
 }
 
 body,
-input {
+input,
+button {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: #333333;
@@ -20,7 +21,7 @@ h1,
 h2,
 h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -55,6 +56,20 @@ input[readonly] {
   outline: none;
 }
 
+button {
+  background-color: #333333;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
+}
+
+button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
 /*Pages*/
 .wrapper {
   display: -ms-grid;
@@ -66,7 +81,7 @@ input[readonly] {
 
 .contentContainer {
   display: none;
-  padding: 0 4px;
+  padding-right: 8px;
 }
 
 .formField {
@@ -96,10 +111,12 @@ input[readonly] {
   background-color: #e6c166;
   color: #333333;
   text-align: center;
-  margin-left: -20px;
+  margin-left: -30px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   overflow: hidden;
+  padding: 6px 6px 6px 40px;
+  font-weight: bold;
 }
 
 #msgContainer.visible {

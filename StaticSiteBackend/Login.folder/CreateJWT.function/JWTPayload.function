@@ -1,6 +1,13 @@
 {
   "Properties": [
     {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:eA7Z",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
       "Id": "Value",
       "Type": "Custom:eA7Z",
       "ValueUsage": "RuntimeRead",
@@ -30,13 +37,6 @@
         ]
       },
       "ValueType": "Linx.JsonExpression"
-    },
-    {
-      "Id": "Type",
-      "Type": "Compiled:Linx.ITypeReference",
-      "ValueUsage": "DesignTime",
-      "Value": "Custom:eA7Z",
-      "ValueType": "Linx.ValidCustomTypeReference"
     }
   ],
   "Result": "Custom:eA7Z"

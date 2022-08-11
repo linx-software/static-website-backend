@@ -2,7 +2,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "lJz1",
+      "Id": "sSmS",
       "Properties": [
         {
           "Id": "id",
@@ -26,18 +26,6 @@
           "Id": "email",
           "Name": "email",
           "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "password",
-          "Name": "password",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "adddatetime",
-          "Name": "adddatetime",
-          "Type": "Compiled:DateTime",
           "Access": "ReadWrite"
         }
       ]

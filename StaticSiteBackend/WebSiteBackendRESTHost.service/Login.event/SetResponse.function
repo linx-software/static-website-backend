@@ -1,17 +1,6 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:XzJY",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:XzJY"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
       "Id": "Source",
       "Type": "Generated:XzJY",
       "ValueUsage": "RuntimeRead",
@@ -65,6 +54,17 @@
         ]
       },
       "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:XzJY",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:XzJY"
+      },
+      "ValueType": "Linx.CSharpExpression"
     }
   ]
 }

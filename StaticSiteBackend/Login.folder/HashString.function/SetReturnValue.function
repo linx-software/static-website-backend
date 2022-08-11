@@ -1,22 +1,22 @@
 {
   "Properties": [
     {
-      "Id": "Target",
+      "Id": "Source",
       "Type": "Compiled:String",
-      "ValueUsage": "RuntimeWrite",
+      "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "GenerateHash",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Source",
+      "Id": "Target",
       "Type": "Compiled:String",
-      "ValueUsage": "RuntimeRead",
+      "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "GenerateHash",
+        "Expression": "$.Result",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },

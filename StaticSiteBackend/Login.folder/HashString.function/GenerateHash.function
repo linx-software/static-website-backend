@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Data",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.GenerateHashBinary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.GenerateHashBinary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "Expression": "$.Parameters.String",
@@ -12,16 +12,16 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Hash type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.HashType, Twenty57.Linx.Plugins.Cryptography, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "Hex"
-    },
-    {
       "Id": "Hash algorithm",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.HashingAlgorithmType, Twenty57.Linx.Plugins.Cryptography, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.HashingAlgorithmType, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": "SHA512"
+    },
+    {
+      "Id": "Hash type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.GenerateHash.HashType, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Hex"
     }
   ],
   "Result": "Compiled:String"

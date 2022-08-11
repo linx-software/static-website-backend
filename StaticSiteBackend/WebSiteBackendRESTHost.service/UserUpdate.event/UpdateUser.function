@@ -1,29 +1,6 @@
 {
   "Properties": [
     {
-      "Id": "ParameterNameMapping",
-      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "DesignTime",
-      "Value": {
-        "mrEs": "User"
-      },
-      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "Id": "Process",
-      "Type": "Compiled:Twenty57.Linx.Interfaces.StandardComponent.IProcessReference, Twenty57.Linx.Interfaces.StandardComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": {
-        "Id": "qceg",
-        "Name": "Users.UpdateUser",
-        "Parameters": "Generated:3hum",
-        "Result": "Generated:pttf",
-        "IsValid": true,
-        "QualifiedPath": "FL:Users→PC:UpdateUser"
-      },
-      "ValueType": "Twenty57.Linx.Domain.ProcessReference, Twenty57.Linx.Domain, Version=6.0.3.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
       "Id": "mrEs",
       "Type": "Custom:dc8Z",
       "ValueUsage": "RuntimeRead",
@@ -73,6 +50,29 @@
         ]
       },
       "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "mrEs": "User"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "qceg",
+        "Name": "Users.UpdateUser",
+        "Parameters": "Generated:3hum",
+        "Result": "Generated:pttf",
+        "IsValid": true,
+        "QualifiedPath": "FL:Users→PC:UpdateUser"
+      },
+      "ValueType": "Linx.ProcessReference"
     }
   ],
   "Result": "Generated:pttf"

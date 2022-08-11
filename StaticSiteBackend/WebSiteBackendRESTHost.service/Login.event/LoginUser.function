@@ -1,22 +1,22 @@
 {
   "Properties": [
     {
-      "Id": "hJDV",
+      "Id": "bbl6",
       "Type": "Compiled:String",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Parameters.body.Password",
+        "Expression": "$.Parameters.body.Email",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "bbl6",
+      "Id": "hJDV",
       "Type": "Compiled:String",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Parameters.body.Email",
+        "Expression": "$.Parameters.body.Password",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
@@ -34,7 +34,7 @@
     },
     {
       "Id": "Process",
-      "Type": "Compiled:Twenty57.Linx.Interfaces.StandardComponent.IProcessReference, Twenty57.Linx.Interfaces.StandardComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Linx.IProcessReference",
       "ValueUsage": "DesignTime",
       "Value": {
         "Id": "wH3f",
@@ -44,7 +44,7 @@
         "IsValid": true,
         "QualifiedPath": "FL:Login→PC:LoginUser"
       },
-      "ValueType": "Twenty57.Linx.Domain.ProcessReference, Twenty57.Linx.Domain, Version=6.0.3.0, Culture=neutral, PublicKeyToken=null"
+      "ValueType": "Linx.ProcessReference"
     }
   ],
   "Result": "Generated:zETX"

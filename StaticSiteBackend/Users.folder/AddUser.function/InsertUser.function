@@ -1,27 +1,21 @@
 {
   "Properties": [
     {
-      "Id": "Expression2",
-      "Type": "Compiled:Object",
+      "Id": "Connection string",
+      "Type": "Compiled:String",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Parameters.User.Email",
+        "Expression": "$.Settings.ConnectionString",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "SQL",
-      "Type": "Compiled:String",
-      "ValueUsage": "RuntimeRead",
-      "Value": "INSERT INTO users\r\n           (firstname\r\n           ,lastname\r\n           ,email\r\n           ,password)\r\n     VALUES\r\n           (@{$.Parameters.User.FirstName}\r\n           ,@{$.Parameters.User.LastName}\r\n           ,@{$.Parameters.User.Email}\r\n           ,@{HashString});\r\n"
-    },
-    {
-      "Id": "ExpressionCount",
-      "Type": "Compiled:Int32",
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
-      "Value": 4
+      "Value": "Odbc"
     },
     {
       "Id": "Expression0",
@@ -35,28 +29,22 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Connection string",
-      "Type": "Compiled:String",
+      "Id": "Expression1",
+      "Type": "Compiled:Object",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Settings.ConnectionString",
+        "Expression": "$.Parameters.User.LastName",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Design-time connection string",
-      "Type": "Compiled:String",
-      "ValueUsage": "DesignTime",
-      "Value": ""
-    },
-    {
-      "Id": "Expression1",
+      "Id": "Expression2",
       "Type": "Compiled:Object",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "Expression": "$.Parameters.User.LastName",
+        "Expression": "$.Parameters.User.Email",
         "CompiledExpression": "={0}",
         "Type": "Compiled:String"
       },
@@ -75,7 +63,7 @@
     },
     {
       "Id": "Result type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": {
         "CustomType": null,
@@ -84,23 +72,17 @@
       }
     },
     {
-      "Id": "Design-time connection type",
-      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "DesignTime",
-      "Value": "Odbc",
-      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "INSERT INTO users\r\n           (firstname\r\n           ,lastname\r\n           ,email\r\n           ,password)\r\n     VALUES\r\n           (@{$.Parameters.User.FirstName}\r\n           ,@{$.Parameters.User.LastName}\r\n           ,@{$.Parameters.User.Email}\r\n           ,@{HashString});\r\n"
     },
     {
       "Id": "Timeout",
       "Type": "Compiled:Int32",
       "ValueUsage": "DesignTime",
       "Value": 60
-    },
-    {
-      "Id": "Connection type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "Odbc"
     }
-  ]
+  ],
+  "Version": "2"
 }

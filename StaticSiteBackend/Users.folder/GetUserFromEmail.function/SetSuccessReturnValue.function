@@ -1,17 +1,6 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:yuPP",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:yuPP"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
       "Id": "Source",
       "Type": "Generated:yuPP",
       "ValueUsage": "RuntimeRead",
@@ -65,6 +54,17 @@
         ]
       },
       "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:yuPP",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:yuPP"
+      },
+      "ValueType": "Linx.CSharpExpression"
     }
   ]
 }

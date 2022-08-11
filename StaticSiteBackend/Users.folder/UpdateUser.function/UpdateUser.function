@@ -1,23 +1,6 @@
 {
   "Properties": [
     {
-      "Id": "SQL",
-      "Type": "Compiled:String",
-      "ValueUsage": "RuntimeRead",
-      "Value": {
-        "Expression": "UpdateSQL",
-        "CompiledExpression": "={0}",
-        "Type": "Compiled:String"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "ExpressionCount",
-      "Type": "Compiled:Int32",
-      "ValueUsage": "DesignTime",
-      "Value": 0
-    },
-    {
       "Id": "Connection string",
       "Type": "Compiled:String",
       "ValueUsage": "RuntimeRead",
@@ -29,14 +12,14 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Design-time connection string",
-      "Type": "Compiled:String",
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
-      "Value": ""
+      "Value": "Odbc"
     },
     {
       "Id": "Result type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": {
         "CustomType": null,
@@ -45,23 +28,22 @@
       }
     },
     {
-      "Id": "Design-time connection type",
-      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "DesignTime",
-      "Value": "Odbc",
-      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "UpdateSQL",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
     },
     {
       "Id": "Timeout",
       "Type": "Compiled:Int32",
       "ValueUsage": "DesignTime",
       "Value": 60
-    },
-    {
-      "Id": "Connection type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "Odbc"
     }
-  ]
+  ],
+  "Version": "2"
 }
