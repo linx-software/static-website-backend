@@ -19,7 +19,9 @@ The website uses Javascript to communicate with the REST service and does not re
 ### Linx
 
 1. Open Solution
-2. Change ConnectionString Setting
+2. Open Settings
+   a. Add a connection string to the database in the ConnectionString setting
+   b. Add a random string in the BearerSecret setting
 
 ### Website
 
@@ -29,8 +31,6 @@ The website uses Javascript to communicate with the REST service and does not re
 OR
 
 2. Browse to the website using a local webserver
-
-
 
 ## Usage
 
