@@ -1,0 +1,31 @@
+{
+  "Id": "Xofk",
+  "Name": "_HUpm",
+  "Properties": [
+    {
+      "Id": "3Am9",
+      "Name": "Email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "djUF",
+      "Name": "FirstName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "POqA",
+      "Name": "LastName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Zi4I",
+      "Name": "Password",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "hZpb",
+      "Name": "UserID",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

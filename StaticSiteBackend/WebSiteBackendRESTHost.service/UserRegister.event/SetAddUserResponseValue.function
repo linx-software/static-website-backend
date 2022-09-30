@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:DTwX",
+      "Type": "Custom:r9hH",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
@@ -46,12 +46,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:DTwX",
+      "Type": "Custom:r9hH",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:DTwX"
+        "Type": "Custom:r9hH"
       },
       "ValueType": "Linx.CSharpExpression"
     }

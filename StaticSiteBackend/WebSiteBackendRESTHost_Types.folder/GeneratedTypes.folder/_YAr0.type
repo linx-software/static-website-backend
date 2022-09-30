@@ -1,0 +1,21 @@
+{
+  "Id": "TsVS",
+  "Name": "_YAr0",
+  "Properties": [
+    {
+      "Id": "sSQZ",
+      "Name": "Message",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "2n2K",
+      "Name": "Success",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "gyEe",
+      "Name": "User",
+      "Type": "Custom:Xofk"
+    }
+  ]
+}

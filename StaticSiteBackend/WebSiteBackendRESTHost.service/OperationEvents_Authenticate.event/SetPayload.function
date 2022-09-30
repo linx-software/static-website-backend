@@ -1,0 +1,26 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:eA7Z",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "VerifyJWT.Payload",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:eA7Z",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "JWTPayload",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:eA7Z"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

@@ -38,12 +38,12 @@
         "Id": "7uF6",
         "Name": "Users.GetUserFromEmail",
         "Parameters": "Generated:zS9U",
-        "Result": "Generated:yuPP",
+        "Result": "Custom:lwT0",
         "IsValid": true,
         "QualifiedPath": "FL:Users→PC:GetUserFromEmail"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:yuPP"
+  "Result": "Custom:lwT0"
 }

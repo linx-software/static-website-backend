@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:7v1n",
+      "Type": "Custom:9lRl",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"Message\":\"User added\", \"Success\":true, \"User\":{\"Email\":{\"LinxExpression\":\"[PARSED]\"}, \"FirstName\":{\"LinxExpression\":\"[PARSED]\"}, \"LastName\":{\"LinxExpression\":\"[PARSED]\"}, \"UserID\":{\"LinxExpression\":\"[PARSED]\"}}}",
@@ -57,12 +57,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:7v1n",
+      "Type": "Custom:9lRl",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:7v1n"
+        "Type": "Custom:9lRl"
       },
       "ValueType": "Linx.CSharpExpression"
     }

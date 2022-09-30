@@ -1,0 +1,32 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:XxgG",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"Cookies\":[{\"Name\":\"loginAuth\", \"Value\":{\"LinxExpression\":\"[PARSED]\"}}]}, \"ResponseBody\":{\"Message\":\"You have been logged out\",\"Success\":true}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "Cookies",
+              "[]",
+              "Value"
+            ],
+            "expression": {
+              "Expression": " \"\"",
+              "CompiledExpression": "=\"\"",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

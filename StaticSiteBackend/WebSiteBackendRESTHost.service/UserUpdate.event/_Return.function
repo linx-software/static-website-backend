@@ -1,0 +1,52 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:HnhV",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "ResponseBody",
+              "Message"
+            ],
+            "expression": {
+              "Expression": "UpdateUser.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Success"
+            ],
+            "expression": {
+              "Expression": "UpdateUser.Success",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "User"
+            ],
+            "expression": {
+              "Expression": "UpdateUser.User",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:dc8Z"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Id": "wUuW",
+  "Name": "Identity",
+  "Properties": [
+    {
+      "Id": "ZotV",
+      "Name": "Name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "CaWV",
+      "Name": "AuthenticationType",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "i23D",
+      "Name": "IsAuthenticated",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

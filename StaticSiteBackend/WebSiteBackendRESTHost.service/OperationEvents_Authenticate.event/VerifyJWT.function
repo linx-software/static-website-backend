@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Jwt.Common.JwtAlgorithm, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "HS256"
+    },
+    {
+      "Id": "Secret key",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Common.Binary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "TokenSigningSecret",
+        "CompiledExpression": "={0}",
+        "Type": "List:Compiled:Byte"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Token",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEachCookie.Loop.Value",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Generated:kJzh"
+}

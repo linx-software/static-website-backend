@@ -1,0 +1,52 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:Syjm",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "ResponseBody",
+              "Message"
+            ],
+            "expression": {
+              "Expression": "GetUserFromEmail.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Success"
+            ],
+            "expression": {
+              "Expression": "GetUserFromEmail.Success",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "User"
+            ],
+            "expression": {
+              "Expression": "GetUserFromEmail.User",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:dc8Z"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

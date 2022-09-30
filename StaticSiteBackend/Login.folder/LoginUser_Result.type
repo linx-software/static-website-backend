@@ -1,0 +1,26 @@
+{
+  "Id": "878y",
+  "Name": "LoginUser_Result",
+  "Properties": [
+    {
+      "Id": "1Gp9",
+      "Name": "Message",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "5QUD",
+      "Name": "Success",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "M1N2",
+      "Name": "Token",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "qG73",
+      "Name": "User",
+      "Type": "Custom:dc8Z"
+    }
+  ]
+}

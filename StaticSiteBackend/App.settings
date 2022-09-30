@@ -28,5 +28,17 @@
     "Name": "ShowServerErrors",
     "Type": "Compiled:Boolean",
     "Value": "True"
+  },
+  {
+    "Id": "j3Bv",
+    "Name": "AuthCookieName",
+    "Type": "Compiled:String",
+    "Value": "loginAuth"
+  },
+  {
+    "Id": "QpSL",
+    "Name": "CORSOrigin",
+    "Type": "Compiled:String",
+    "Value": ""
   }
 ]

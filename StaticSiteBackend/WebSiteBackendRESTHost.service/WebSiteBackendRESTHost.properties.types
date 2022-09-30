@@ -2,7 +2,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "diIv",
+      "Id": "zY83",
       "Properties": [
         {
           "Id": "Email",
@@ -40,7 +40,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "XzJY",
+      "Id": "f1hw",
       "Properties": [
         {
           "Id": "HttpContext",
@@ -51,7 +51,7 @@
         {
           "Id": "ResponseBody",
           "Name": "ResponseBody",
-          "Type": "Generated:erQN",
+          "Type": "Generated:owye",
           "Access": "ReadWrite"
         }
       ]
@@ -60,7 +60,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "erQN",
+      "Id": "owye",
       "Properties": [
         {
           "Id": "Message",
@@ -75,15 +75,9 @@
           "Access": "ReadWrite"
         },
         {
-          "Id": "Token",
-          "Name": "Token",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
           "Id": "User",
           "Name": "User",
-          "Type": "Generated:qdaE",
+          "Type": "Generated:JHkh",
           "Access": "ReadWrite"
         }
       ]
@@ -92,7 +86,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "qdaE",
+      "Id": "JHkh",
       "Properties": [
         {
           "Id": "Email",
@@ -130,7 +124,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "1IX4",
+      "Id": "XxgG",
       "Properties": [
         {
           "Id": "HttpContext",
@@ -141,7 +135,7 @@
         {
           "Id": "ResponseBody",
           "Name": "ResponseBody",
-          "Type": "Generated:NXwP",
+          "Type": "Generated:QTYU",
           "Access": "ReadWrite"
         }
       ]
@@ -150,7 +144,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "NXwP",
+      "Id": "QTYU",
       "Properties": [
         {
           "Id": "Message",
@@ -165,15 +159,9 @@
           "Access": "ReadWrite"
         },
         {
-          "Id": "Token",
-          "Name": "Token",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
           "Id": "User",
           "Name": "User",
-          "Type": "Generated:Jayd",
+          "Type": "Generated:Ca8p",
           "Access": "ReadWrite"
         }
       ]
@@ -182,7 +170,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "Jayd",
+      "Id": "Ca8p",
       "Properties": [
         {
           "Id": "Email",
@@ -220,45 +208,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "9kQm",
-      "Properties": [
-        {
-          "Id": "Email",
-          "Name": "Email",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "FirstName",
-          "Name": "FirstName",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "LastName",
-          "Name": "LastName",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "Password",
-          "Name": "Password",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "UserID",
-          "Name": "UserID",
-          "Type": "Compiled:Int64",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "DTwX",
+      "Id": "Syjm",
       "Properties": [
         {
           "Id": "HttpContext",
@@ -269,7 +219,7 @@
         {
           "Id": "ResponseBody",
           "Name": "ResponseBody",
-          "Type": "Generated:jeyZ",
+          "Type": "Generated:i2Bv",
           "Access": "ReadWrite"
         }
       ]
@@ -278,7 +228,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "jeyZ",
+      "Id": "i2Bv",
       "Properties": [
         {
           "Id": "Message",
@@ -293,15 +243,9 @@
           "Access": "ReadWrite"
         },
         {
-          "Id": "Token",
-          "Name": "Token",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
           "Id": "User",
           "Name": "User",
-          "Type": "Generated:fgu7",
+          "Type": "Generated:2aDA",
           "Access": "ReadWrite"
         }
       ]
@@ -310,7 +254,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "fgu7",
+      "Id": "2aDA",
       "Properties": [
         {
           "Id": "Email",
@@ -348,7 +292,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "SQwg",
+      "Id": "El2R",
       "Properties": [
         {
           "Id": "Email",
@@ -386,7 +330,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "HnYx",
+      "Id": "6GTD",
       "Properties": [
         {
           "Id": "HttpContext",
@@ -397,7 +341,7 @@
         {
           "Id": "ResponseBody",
           "Name": "ResponseBody",
-          "Type": "Generated:Va5X",
+          "Type": "Generated:YAr0",
           "Access": "ReadWrite"
         }
       ]
@@ -406,7 +350,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "Va5X",
+      "Id": "YAr0",
       "Properties": [
         {
           "Id": "Message",
@@ -421,15 +365,9 @@
           "Access": "ReadWrite"
         },
         {
-          "Id": "Token",
-          "Name": "Token",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
           "Id": "User",
           "Name": "User",
-          "Type": "Generated:wgQH",
+          "Type": "Generated:HUpm",
           "Access": "ReadWrite"
         }
       ]
@@ -438,7 +376,129 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "wgQH",
+      "Id": "HUpm",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "D06L",
+      "Properties": [
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FirstName",
+          "Name": "FirstName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LastName",
+          "Name": "LastName",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Password",
+          "Name": "Password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UserID",
+          "Name": "UserID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "HnhV",
+      "Properties": [
+        {
+          "Id": "HttpContext",
+          "Name": "HttpContext",
+          "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.Data.Out.HttpContext, Twenty57.Linx.Plugins.Rest, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Generated:h3ys",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "h3ys",
+      "Properties": [
+        {
+          "Id": "Message",
+          "Name": "Message",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "User",
+          "Name": "User",
+          "Type": "Generated:exOZ",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "exOZ",
       "Properties": [
         {
           "Id": "Email",

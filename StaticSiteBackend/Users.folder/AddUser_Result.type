@@ -1,0 +1,21 @@
+{
+  "Id": "9lRl",
+  "Name": "AddUser_Result",
+  "Properties": [
+    {
+      "Id": "b7p1",
+      "Name": "Message",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "1Srb",
+      "Name": "Success",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "Prvy",
+      "Name": "User",
+      "Type": "Custom:dc8Z"
+    }
+  ]
+}

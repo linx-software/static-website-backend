@@ -40,12 +40,12 @@
         "Id": "wH3f",
         "Name": "Login.LoginUser",
         "Parameters": "Generated:KNe0",
-        "Result": "Generated:zETX",
+        "Result": "Custom:878y",
         "IsValid": true,
         "QualifiedPath": "FL:Login→PC:LoginUser"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:zETX"
+  "Result": "Custom:878y"
 }

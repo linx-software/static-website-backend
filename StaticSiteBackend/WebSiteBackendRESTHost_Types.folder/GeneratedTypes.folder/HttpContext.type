@@ -1,0 +1,26 @@
+{
+  "Id": "DovX",
+  "Name": "HttpContext",
+  "Properties": [
+    {
+      "Id": "DvxW",
+      "Name": "Headers",
+      "Type": "List:Custom:Mm0j"
+    },
+    {
+      "Id": "NR1q",
+      "Name": "Cookies",
+      "Type": "List:Custom:4bg1"
+    },
+    {
+      "Id": "Dud0",
+      "Name": "User",
+      "Type": "Custom:wUuW"
+    },
+    {
+      "Id": "nBE5",
+      "Name": "Items",
+      "Type": "List:Custom:xZdI"
+    }
+  ]
+}

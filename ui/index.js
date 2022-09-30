@@ -30,28 +30,17 @@ logoutLink.addEventListener("click", function () {
     logoutUser();
 });
 
-pageInit("");
+pageInit();
 
 /*Page*/
-function pageInit(tk) {
-    if (tk != "") {
-        sessionStorage.setItem("token", tk);
-    } else if (sessionStorage.getItem("token")) {
-        tk = sessionStorage.getItem("token");
-    }
-
+function pageInit() {
     document.getElementById("userUpdateContainer").classList.remove("showBlock");
     var arrEl = document.getElementsByClassName("contentContainer");
     for (i = 0; i < arrEl.length; i++) {
         arrEl[i].classList.remove("showBlock");
     }
-    if (tk != "") {
-        getUser();
-        showMessage("You are logged in");
-    } else {
-        showLoginForm();
-        showRegisterForm();
-    }
+    showLoginForm();
+    showRegisterForm();
 }
 function showLoginForm() {
     const loginContainer = document.getElementById("loginContainer");
@@ -102,7 +91,9 @@ function loginUser() {
             .then(json)
             .then((data) => {
                 if (data.Success) {
-                    pageInit(data.Token);
+                    getUser();
+                    showMessage("You are logged in");
+                    document.querySelector(".wrapper").style.display = "none";
                 } else {
                     showMessage(data.Message);
                 }
@@ -120,6 +111,18 @@ function getUser() {
                 showUpdateForm(data.User);
             } else {
                 showMessage(data.Message);
+            }
+        })
+        .catch((error) => {
+            showAPIError(error);
+        });
+}
+function logoutUser() {
+    getData("/logout")
+        .then(json)
+        .then((data) => {
+            if (data.Success) {
+                window.location.href = "?msg=You are logged out";
             }
         })
         .catch((error) => {
@@ -154,15 +157,12 @@ function updateUser() {
 async function postData(url = "", data = {}) {
     const response = await fetch(linxapi + url, {
         method: "POST",
-        mode: "cors",
         cache: "no-cache",
-        credentials: "same-origin",
+        credentials: "include",
         headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + sessionStorage.getItem("token"),
+            Authorization: "abc",
         },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
         body: JSON.stringify(data),
     });
     return response;
@@ -170,15 +170,12 @@ async function postData(url = "", data = {}) {
 async function getData(url = "") {
     const response = await fetch(linxapi + url, {
         method: "GET",
-        mode: "cors",
         cache: "no-cache",
-        credentials: "same-origin",
+        credentials: "include",
         headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + sessionStorage.getItem("token"),
+            Authorization: "abc",
         },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
     });
     return response;
 }
@@ -239,10 +236,6 @@ function showPassword(id) {
     } else {
         el.type = "password";
     }
-}
-function logoutUser() {
-    sessionStorage.removeItem("token");
-    window.location.href = window.location.href + "?msg=You are logged out";
 }
 function addToQuerystring(key, val) {
     const url = new URL(window.location);

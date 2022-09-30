@@ -1,0 +1,43 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.WebServiceWithDefinitionEditor.OpenAPI.OperationEvents.Authenticate.AuthenticateEventOutput, Twenty57.Linx.Plugins.Rest, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"User\":{\"Name\":{\"LinxExpression\":\"[PARSED]\"}, \"IsAuthenticated\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "Name"
+            ],
+            "expression": {
+              "Expression": "JWTPayload.unique_name",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "IsAuthenticated"
+            ],
+            "expression": {
+              "Expression": "LoggedIn",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

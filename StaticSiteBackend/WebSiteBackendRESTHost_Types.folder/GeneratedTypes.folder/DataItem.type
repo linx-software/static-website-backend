@@ -1,0 +1,16 @@
+{
+  "Id": "xZdI",
+  "Name": "DataItem",
+  "Properties": [
+    {
+      "Id": "5AvK",
+      "Name": "Name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "iMvx",
+      "Name": "Value",
+      "Type": "Compiled:String"
+    }
+  ]
+}

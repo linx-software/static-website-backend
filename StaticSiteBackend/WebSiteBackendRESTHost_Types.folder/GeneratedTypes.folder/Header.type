@@ -1,0 +1,16 @@
+{
+  "Id": "Mm0j",
+  "Name": "Header",
+  "Properties": [
+    {
+      "Id": "OLLH",
+      "Name": "Name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "dUc3",
+      "Name": "Value",
+      "Type": "List:Compiled:String"
+    }
+  ]
+}

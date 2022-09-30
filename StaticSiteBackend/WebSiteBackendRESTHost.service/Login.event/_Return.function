@@ -1,0 +1,65 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:f1hw",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"Cookies\":[{\"Name\":\"loginAuth\",\"Value\":{\"LinxExpression\":\"[PARSED]\"}}]}, \"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "Cookies",
+              "[]",
+              "Value"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Token",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Message"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Message",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "Success"
+            ],
+            "expression": {
+              "Expression": "LoginUser.Success",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseBody",
+              "User"
+            ],
+            "expression": {
+              "Expression": "LoginUser.User",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:dc8Z"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

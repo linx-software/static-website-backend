@@ -1,0 +1,21 @@
+{
+  "Id": "lwT0",
+  "Name": "GetUserFromEmail_Result",
+  "Properties": [
+    {
+      "Id": "Gqys",
+      "Name": "Message",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "OHYG",
+      "Name": "Success",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "QFMw",
+      "Name": "User",
+      "Type": "Custom:dc8Z"
+    }
+  ]
+}

@@ -25,6 +25,8 @@ The website uses Javascript to communicate with the REST service and does not re
     
     b. Add a random string in the BearerSecret setting
 
+    c. Change the CORSOrigin setting to point to your website server URL (e.g. http://localhost)
+
 ### Website
 
 1. Copy website files to a folder of your choice

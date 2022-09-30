@@ -1,0 +1,16 @@
+{
+  "Id": "r9hH",
+  "Name": "UserRegister_Result",
+  "Properties": [
+    {
+      "Id": "EhJL",
+      "Name": "HttpContext",
+      "Type": "Custom:DovX"
+    },
+    {
+      "Id": "4TLM",
+      "Name": "ResponseBody",
+      "Type": "Custom:TsVS"
+    }
+  ]
+}

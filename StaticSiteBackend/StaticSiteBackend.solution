@@ -1,20 +1,22 @@
 {
-  "ApplicationVersion": "6.3.1",
+  "ApplicationVersion": "6.4.1",
+  "SolutionVersion": 4,
   "Plugins": [
     "twenty57.linx.plugins.cryptography, 1.0.1",
-    "twenty57.linx.plugins.database, 1.1.1",
+    "twenty57.linx.plugins.database, 1.3.0",
     "twenty57.linx.plugins.rest, 1.1.0",
-    "twenty57.linx.plugins.standard, 1.0.2",
+    "twenty57.linx.plugins.standard, 1.1.0",
     "twenty57.linx.plugins.utilities, 1.0.2"
   ],
   "Dependencies": [
-    "twenty57.linx.solutiondependencies.compilation, 1.1.7",
-    "twenty57.linx.solutiondependencies.types, 1.1.0"
+    "twenty57.linx.solutiondependencies.compilation, 2.0.0",
+    "twenty57.linx.solutiondependencies.types, 1.2.0"
   ],
   "Items": [
     "Login.folder",
     "Service.folder",
     "Users.folder",
-    "WebSiteBackendRESTHost.service"
+    "WebSiteBackendRESTHost.service",
+    "WebSiteBackendRESTHost_Types.folder"
   ]
 }

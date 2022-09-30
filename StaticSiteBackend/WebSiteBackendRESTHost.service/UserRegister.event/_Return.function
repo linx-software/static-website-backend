@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:6GTD",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "_Result",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:r9hH"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

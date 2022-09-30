@@ -1,0 +1,16 @@
+{
+  "Id": "4bg1",
+  "Name": "Cookie",
+  "Properties": [
+    {
+      "Id": "PBDi",
+      "Name": "Name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "t5sH",
+      "Name": "Value",
+      "Type": "Compiled:String"
+    }
+  ]
+}

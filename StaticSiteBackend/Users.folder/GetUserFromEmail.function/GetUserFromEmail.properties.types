@@ -12,31 +12,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "yuPP",
-      "Properties": [
-        {
-          "Id": "Qugk",
-          "Name": "Message",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "3dL8",
-          "Name": "Success",
-          "Type": "Compiled:Boolean",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "dfdP",
-          "Name": "User",
-          "Type": "Custom:dc8Z",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

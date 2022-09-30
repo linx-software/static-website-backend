@@ -1,0 +1,16 @@
+{
+  "Id": "ltam",
+  "Name": "Headers",
+  "Properties": [
+    {
+      "Id": "BOUF",
+      "Name": "Key",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "ghYT",
+      "Name": "Value",
+      "Type": "Compiled:String"
+    }
+  ]
+}

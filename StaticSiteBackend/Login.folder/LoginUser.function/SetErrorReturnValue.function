@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:zETX",
+      "Type": "Custom:878y",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":false}",
@@ -23,12 +23,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:zETX",
+      "Type": "Custom:878y",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:zETX"
+        "Type": "Custom:878y"
       },
       "ValueType": "Linx.CSharpExpression"
     }

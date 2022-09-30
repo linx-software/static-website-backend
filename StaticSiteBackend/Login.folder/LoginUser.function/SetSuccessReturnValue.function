@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:zETX",
+      "Type": "Custom:878y",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"Message\":\"User logged in\", \"Success\":true, \"Token\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"Email\":{\"LinxExpression\":\"[PARSED]\"},\"FirstName\":{\"LinxExpression\":\"[PARSED]\"},\"LastName\":{\"LinxExpression\":\"[PARSED]\"},\"UserID\":{\"LinxExpression\":\"[PARSED]\"}}}",
@@ -67,12 +67,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:zETX",
+      "Type": "Custom:878y",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:zETX"
+        "Type": "Custom:878y"
       },
       "ValueType": "Linx.CSharpExpression"
     }
