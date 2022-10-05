@@ -5,8 +5,21 @@
       "Type": "Generated:f1hw",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "ParsedExpression": "{\"HttpContext\":{\"Cookies\":[{\"Name\":\"loginAuth\",\"Value\":{\"LinxExpression\":\"[PARSED]\"}}]}, \"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ParsedExpression": "{\"HttpContext\":{\"Cookies\":[{\"Name\":{\"LinxExpression\":\"[PARSED]\"}, \"Value\":{\"LinxExpression\":\"[PARSED]\"}}]}, \"ResponseBody\":{\"Message\":{\"LinxExpression\":\"[PARSED]\"}, \"Success\":{\"LinxExpression\":\"[PARSED]\"}, \"User\":{\"LinxExpression\":\"[PARSED]\"}}}",
         "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "Cookies",
+              "[]",
+              "Name"
+            ],
+            "expression": {
+              "Expression": "$.Settings.AuthCookieName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
           {
             "typePath": [
               "HttpContext",
